@@ -49,5 +49,10 @@ COPY ./conf/opt-php.ini /opt/phpenv/versions/5.5.23/etc/php.ini
 COPY ./conf/opt-apcu.ini /opt/phpenv/versions/5.5.23/etc/conf.d/apcu.ini
 COPY ./conf/opt-gettext.ini /opt/phpenv/versions/5.5.23/etc/conf.d/gettext.ini
 COPY ./conf/opt-xdebug.ini /opt/phpenv/versions/5.5.23/etc/conf.d/xdebug.ini
+# for php 5.5.27
+COPY ./conf/opt-php.ini /opt/phpenv/versions/5.5.27/etc/php.ini
+COPY ./conf/opt-apcu.ini /opt/phpenv/versions/5.5.27/etc/conf.d/apcu.ini
+COPY ./conf/opt-gettext.ini /opt/phpenv/versions/5.5.27/etc/conf.d/gettext.ini
+COPY ./conf/opt-xdebug.ini /opt/phpenv/versions/5.5.27/etc/conf.d/xdebug.ini
 
 CMD ["/bin/bash", "/start.sh"]
